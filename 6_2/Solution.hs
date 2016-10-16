@@ -1,0 +1,1 @@
+minsum xs = minimum (map (\(x, y) -> x + y) (zip xs (tail(xs))))
