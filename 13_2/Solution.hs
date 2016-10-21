@@ -8,6 +8,7 @@ renumerate' (Node x l r) m | l == Empty && r == Empty = (m + 1, Node m Empty Emp
                                           in (num, Node m Empty rt)
                            | r == Empty = let (num, lt) = renumerate' l (m + 1)
                                           in (num, Node m lt Empty)
+                            {-- можно было без сделать эффективнее --}
                            | otherwise = let
                                           (numl, lt) = renumerate' l (m + 1)
                                           (numr, rt) = renumerate' r numl

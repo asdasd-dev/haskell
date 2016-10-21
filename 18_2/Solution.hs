@@ -1,0 +1,1 @@
+checkMyRules xs = all (> -1) (zipWith (-) (cycle [300, 300, 300, 300, 300, 1000, 1000]) xs)

@@ -1,0 +1,1 @@
+bigCos x = head [y | y <- (map (cos) [1..]), y > x]
